@@ -58,7 +58,7 @@ def main():
                 print("Saindo...")
                 break
             elif repetir == 1:
-                print(main())
+                return main()
             else:
                 print("Operação invalida. Tente novamente...")
         except ValueError:
