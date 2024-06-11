@@ -6,6 +6,8 @@ def menuConj(array1):
        while True:
             try:
                 elemento = int(input(f"Digite o elemento {i + 1} do array: "))
+                if elemento in array1:
+                    raise ValueError("Elemento duplicado. Digite um elemento diferente")
                 array1.append(elemento)
                 break
 
