@@ -37,10 +37,11 @@ def ops():
     resultadoUniao = uniao(conjunto1, conjunto2)
 
     resultadoIntersec = interseccção(conjunto1, conjunto2)
-    return resultadoIntersec, resultadoUniao,resultadoDiferença
+    return resultadoDiferença, resultadoUniao, resultadoIntersec
 
 def main():
-    resultadoIntersec, resultadoDiferença, resultadoUniao = ops()
+    resultadoDiferença, resultadoUniao, resultadoIntersec = ops()
+
     print("Conjuntos preenchidos: ")
     print(conjunto1)
     print(conjunto2)
@@ -51,7 +52,7 @@ def main():
     elif op == "2":
         print("Resultado da diferença entre os conjuntos é: ", resultadoDiferença)
     elif op == "3":
-        print("Resultado da união entre os conjuntos é:", resultadoUniao)
+        print("Resultado da união entre os conjuntos é:" , resultadoUniao)
 
     while True:
         try:
